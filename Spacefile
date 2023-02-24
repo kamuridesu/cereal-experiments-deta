@@ -1,0 +1,12 @@
+# Spacefile Docs: https://go.deta.dev/docs/spacefile/v0
+v: 0
+micros:
+  - name: PasswordApi
+    src: .
+    engine: python3.9
+    primary: true
+    commands:
+      - pip install -r requirements.txt
+    public_routes:
+      - "/password"
+
